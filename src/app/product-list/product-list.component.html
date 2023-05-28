@@ -1,0 +1,46 @@
+<section class="section-products">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="header">
+          <h3>Featured Product</h3>
+          <h2>Popular Products</h2>
+            <!-- Search -->
+            <div class="search container" style="margin-bottom: 20px;">
+              <div class="row">
+                <div class="col">
+                  <div class="input-group" style="border-radius: 10px; box-shadow: 0px 13px 30px 0px rgba(0, 0, 0, 0.09); padding: 8px;">
+                    <input type="text" class="form-control" placeholder="Search Your Product"  [(ngModel)]="searchQuery" (input)="searchProducts()" style="padding-left: 40px !important; border-left: 1px solid #F4F4F4;">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="" *ngFor="let product of searchedProductsI">
+        <div [id]="'product-' + product.id" class="single-product">
+          <div class="part-1" [style.background]="'url(' + product.imageUrl + ') no-repeat center'">
+            <ul>
+              <li><a routerLink="/cart" ><i class="fas fa-shopping-cart"></i></a></li>
+              <li><i class="fas fa-heart"></i></li>
+              <li (click)="addToCart(product)" ><i class="fas fa-plus"></i></li>
+              <li><i class="fas fa-expand"></i></li>
+            </ul>
+            <div class="line" style="box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2)"></div>
+          </div>
+          <div class="part-0" style="flex: 0 0 auto; width: 100%;box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2)"></div>
+          <div class="part-2" >
+            <h3 class="product-title">{{ product.name }}</h3>
+            <h4 class="product-price">${{ product.price }}</h4><br>
+            <h4 class="product-old-price">Rs.7900</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<br><br><br><br><br>
