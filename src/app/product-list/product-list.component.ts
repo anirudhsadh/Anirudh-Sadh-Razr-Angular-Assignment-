@@ -13,10 +13,10 @@ export class ProductListComponent  {
   searchQuery: string = '';
   
   products: any[] = [
-    { id: 1, name: 'Iphone 11', price: 2000 ,imageUrl:'assets/image1.JPG' , details :'256GB'},
-    { id: 2, name: 'Samsung G11', price: 4000 ,imageUrl:'../assets/image1.jpg', details :'256GB'},
-    { id: 3, name: 'MI 22', price: 6000 ,imageUrl:'../assets/image1.JPG', details :'256GB'},
-    { id: 4, name: 'Redmi C22', price: 8000 ,imageUrl:'../assets/image1.jpg', details :'256GB'}
+    { id: 1, name: 'Iphone 11', price: 2000 ,imageUrl:'https://anirudhsadh.github.io/Anirudh-Sadh-Razr-Angular-Assignment-/assets/image1.jpg' , details :'256GB'},
+    { id: 2, name: 'Samsung G11', price: 4000 ,imageUrl:'https://anirudhsadh.github.io/Anirudh-Sadh-Razr-Angular-Assignment-/assets/image1.jpg', details :'256GB'},
+    { id: 3, name: 'MI 22', price: 6000 ,imageUrl:'https://anirudhsadh.github.io/Anirudh-Sadh-Razr-Angular-Assignment-/assets/image1.jpg', details :'256GB'},
+    { id: 4, name: 'Redmi C22', price: 8000 ,imageUrl:'https://anirudhsadh.github.io/Anirudh-Sadh-Razr-Angular-Assignment-/assets/image1.jpg', details :'256GB'}
   ];
   searchedProductsI:any=this.products;
 
